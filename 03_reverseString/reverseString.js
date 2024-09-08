@@ -6,7 +6,10 @@ const reverseString = function(string) {
     return result;
 };
 
-//npm test reverseString.spec.js
+// solution code:
+// return string.split("").reverse().join("");
+// run tests:
+// npm test reverseString.spec.js
 
 // Do not edit below this line
 module.exports = reverseString;
