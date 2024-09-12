@@ -27,8 +27,8 @@ const sumAll = function (int_1, int_2) {
   return sum;
 };
 
-//const total = sumAll(2, 4);
-//console.log(total);
+// See solution code for error checking using:
+// if (!Number.isInteger(min) || !Number.isInteger(max)) return "ERROR";
 
 // Do not edit below this line
 module.exports = sumAll;
