@@ -6,13 +6,13 @@ const removeFromArray = function (array, ...elementsToRemove) {
 
 
 /* Alternative solution using forEach with callback function
-  function removeFromArray(array, ...itemsToRemove) {
+  function removeFromArray(array, ...elementsToRemove) {
     let arr = [];
     array.forEach(removeItems);
     return arr;
   
     function removeItems(value) {
-      if(!itemsToRemove.includes(value)) {
+      if(!elementsToRemove.includes(value)) {
         arr.push(value);
       }
     }
