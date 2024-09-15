@@ -28,16 +28,29 @@ const multiply = function(array) {
     return product;
   };
 
-const power = function() {
-	
+const power = function(number, exponent) {
+	 let result = 1;
+   for(let j = 1; j <= exponent; j++) {
+    result = result *= number;
+   }
+
+   return result;
 };
 
-const factorial = function() {
-	
+
+const factorial = function(number) {
+  let n_factorial = 1;
+  if(number === 0) return n_factorial;  // 0! = 1
+  
+  let count = number;
+  while( count > 0) {
+    n_factorial *= count;
+    count--;
+  }
+  return n_factorial;	
 };
 
-// test functions with values
-//console.log(' product = ', multiply([1, 2, 3, 4]));
+
 
 // Do not edit below this line
 module.exports = {
