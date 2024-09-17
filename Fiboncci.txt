@@ -1,0 +1,17 @@
+function fibonacci(Fn) {
+   let a = 0;
+   let b = 1;
+
+   if (Fn == 0){
+       return 0;
+   }
+
+   for (let i = 2; i <= Fn; i++) {
+        let c = a + b;
+        a = b;
+        b = c;
+    }
+   return b;  	
+}
+
+console.log(fibonacci(3));
